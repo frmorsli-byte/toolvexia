@@ -36,9 +36,12 @@ export default function RootLayout({
             <nav className="flex gap-6 text-sm font-medium">
               {/* Tools */}
               <Link href="/">Home</Link>
-              <Link href="/tools/json-formatter">JSON Formatter</Link>
-              <Link href="/tools/qr-generator">QR Generator</Link>
-              <Link href="/tools/password-generator">Password Generator</Link>
+              
+
+	      {/* Categories */}
+              <Link href="/tools/dev">Dev Tools</Link>
+ 	      <Link href="/tools/security">Security Tools</Link>
+	      <Link href="/tools/viral">Viral Tools</Link>
 
               {/* Pages légales */}
               <Link href="/legal/privacy">Privacy Policy</Link>
