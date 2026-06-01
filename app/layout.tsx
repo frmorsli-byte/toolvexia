@@ -33,21 +33,56 @@ export default function RootLayout({
               Toolvexia 🚀
             </Link>
 
-            <nav className="flex gap-6 text-sm font-medium">
-              {/* Tools */}
-              <Link href="/">Home</Link>
-              
+            <nav className="flex gap-6 text-sm font-medium relative">
 
-	      {/* Categories */}
-              <Link href="/tools/dev">Dev Tools</Link>
- 	      <Link href="/tools/security">Security Tools</Link>
-	      <Link href="/tools/viral">Viral Tools</Link>
+  {/* HOME */}
+  <Link href="/">Home</Link>
 
-              {/* Pages légales */}
-              <Link href="/legal/privacy">Privacy Policy</Link>
-              <Link href="/legal/terms">Terms of Service</Link>
-              <Link href="/legal/contact">Contact</Link>
-            </nav>
+  {/* DEV TOOLS */}
+  <div className="relative group">
+    <span className="cursor-pointer">Dev Tools</span>
+
+    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/json-formatter">JSON Formatter</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/qr-generator">QR Generator</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/password-generator">Password Generator</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/uuid-generator">UUID Generator</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/base64">Base64 Tool</Link>
+    </div>
+  </div>
+
+  {/* SECURITY TOOLS */}
+  <div className="relative group">
+    <span className="cursor-pointer">Security Tools</span>
+
+    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/ip-lookup">IP Lookup</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/what-is-my-ip">What is my IP</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/dns-lookup">DNS Lookup</Link>
+    </div>
+  </div>
+
+  {/* VIRAL TOOLS */}
+  <div className="relative group">
+    <span className="cursor-pointer">Viral Tools</span>
+
+    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/username-generator">Username Generator</Link>
+    </div>
+  </div>
+
+  {/* LEGAL */}
+  <div className="relative group">
+    <span className="cursor-pointer">Legal</span>
+
+    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/privacy">Privacy Policy</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/terms">Terms</Link>
+      <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/contact">Contact</Link>
+    </div>
+  </div>
+
+</nav>
 
           </div>
         </header>
