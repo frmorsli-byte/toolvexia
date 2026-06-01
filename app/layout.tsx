@@ -42,12 +42,14 @@ export default function RootLayout({
   <div className="relative group">
     <span className="cursor-pointer">Dev Tools</span>
 
-    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/json-formatter">JSON Formatter</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/qr-generator">QR Generator</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/password-generator">Password Generator</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/uuid-generator">UUID Generator</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/base64">Base64 Tool</Link>
+    <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+      <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/json-formatter">JSON Formatter</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/qr-generator">QR Generator</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/password-generator">Password Generator</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/uuid-generator">UUID Generator</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/base64">Base64 Tool</Link>
+      </div>
     </div>
   </div>
 
@@ -55,10 +57,12 @@ export default function RootLayout({
   <div className="relative group">
     <span className="cursor-pointer">Security Tools</span>
 
-    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/ip-lookup">IP Lookup</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/what-is-my-ip">What is my IP</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/dns-lookup">DNS Lookup</Link>
+    <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+      <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/ip-lookup">IP Lookup</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/what-is-my-ip">What is my IP</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/dns-lookup">DNS Lookup</Link>
+      </div>
     </div>
   </div>
 
@@ -66,8 +70,12 @@ export default function RootLayout({
   <div className="relative group">
     <span className="cursor-pointer">Viral Tools</span>
 
-    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/username-generator">Username Generator</Link>
+    <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+      <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/username-generator">
+          Username Generator
+        </Link>
+      </div>
     </div>
   </div>
 
@@ -75,10 +83,12 @@ export default function RootLayout({
   <div className="relative group">
     <span className="cursor-pointer">Legal</span>
 
-    <div className="absolute hidden group-hover:block bg-white border shadow-lg mt-2 rounded-lg p-2 w-56 z-50">
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/privacy">Privacy Policy</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/terms">Terms</Link>
-      <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/contact">Contact</Link>
+    <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+      <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/privacy">Privacy Policy</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/terms">Terms</Link>
+        <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/contact">Contact</Link>
+      </div>
     </div>
   </div>
 
