@@ -1,6 +1,6 @@
 export const metadata = {
   title: "JSON Formatter - Toolvexia",
-  description: "Free online JSON formatter and validator tool.",
+  description: "Format, validate, and beautify your JSON instantly online. Free, fast, and easy-to-use JSON formatter for developers and APIs.",
 };
 
 export default function Layout({

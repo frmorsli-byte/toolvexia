@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Toolvexia",
-  description: "Free online developer and productivity tools",
+  description: "Toolvexia offers free online developer tools including JSON formatter, QR code generator, and password generator. Fast, simple, and SEO optimized tools for everyone.",
 };
 
 export default function RootLayout({
