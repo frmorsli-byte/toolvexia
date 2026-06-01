@@ -1,9 +1,11 @@
 import "./globals.css";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata = {
   title: "Toolvexia",
-  description: "Toolvexia offers free online developer tools including JSON formatter, QR code generator, and password generator. Fast, simple, and SEO optimized tools for everyone.",
+  description:
+    "Toolvexia offers free online developer tools including JSON formatter, QR code generator, and password generator. Fast, simple, and SEO optimized tools for everyone.",
 };
 
 export default function RootLayout({
@@ -14,6 +16,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-50 text-black">
+
+        {/* AdSense script */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7006821543273085"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
 
         {/* Navbar */}
         <header className="border-b bg-white">
