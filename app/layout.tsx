@@ -63,60 +63,68 @@ export default function RootLayout({
         />
 
         {/* Navbar */}
-<header className="border-b bg-white sticky top-0 z-50">
-  <div className="max-w-6xl mx-auto px-3 py-3">
-    
-    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-      
-      {/* Logo */}
-      <Link href="/" className="text-xl md:text-2xl font-bold shrink-0">
-        Toolvexia 🚀
-      </Link>
+        <header className="border-b bg-white">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <Link href="/" className="text-2xl font-bold">
+              Toolvexia 🚀
+            </Link>
 
-      {/* Navigation */}
-      <nav className="flex gap-4 md:gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap pb-1">
-        
-        <Link
-          href="/"
-          className="hover:text-blue-600 transition-colors"
-        >
-          Home
-        </Link>
+            <nav className="flex gap-6 text-sm font-medium relative">
+              {/* HOME */}
+              <Link href="/">Home</Link>
 
-        <Link
-          href="/tools/dev"
-          className="hover:text-blue-600 transition-colors"
-        >
-          Dev Tools
-        </Link>
+              {/* DEV TOOLS */}
+              <div className="relative group">
+                <span className="cursor-pointer">Dev Tools</span>
+                <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+                  <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/json-formatter">JSON Formatter</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/qr-generator">QR Generator</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/password-generator">Password Generator</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/uuid-generator">UUID Generator</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/base64">Base64 Tool</Link>
+                  </div>
+                </div>
+              </div>
 
-        <Link
-          href="/tools/security"
-          className="hover:text-blue-600 transition-colors"
-        >
-          Security
-        </Link>
+              {/* SECURITY TOOLS */}
+              <div className="relative group">
+                <span className="cursor-pointer">Security Tools</span>
+                <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+                  <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/ip-lookup">IP Lookup</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/what-is-my-ip">What is my IP</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/dns-lookup">DNS Lookup</Link>
+                  </div>
+                </div>
+              </div>
 
-        <Link
-          href="/tools/viral"
-          className="hover:text-blue-600 transition-colors"
-        >
-          Viral
-        </Link>
+              {/* VIRAL TOOLS */}
+              <div className="relative group">
+                <span className="cursor-pointer">Viral Tools</span>
+                <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+                  <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/username-generator">
+                      Username Generator
+                    </Link>
+                  </div>
+                </div>
+              </div>
 
-        <Link
-          href="/legal/privacy"
-          className="hover:text-blue-600 transition-colors"
-        >
-          Legal
-        </Link>
-
-      </nav>
-
-    </div>
-
-  </div>
-</header>
+              {/* LEGAL */}
+              <div className="relative group">
+                <span className="cursor-pointer">Legal</span>
+                <div className="absolute left-0 pt-2 hidden group-hover:block z-50">
+                  <div className="bg-white border shadow-lg rounded-lg p-2 w-56">
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/privacy">Privacy Policy</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/terms">Terms</Link>
+                    <Link className="block px-3 py-2 hover:bg-gray-100" href="/legal/contact">Contact</Link>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
 
         {/* Contenu principal */}
         {children}
