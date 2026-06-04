@@ -95,6 +95,7 @@ export default function RootLayout({
                     <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/ip-lookup">IP Lookup</Link>
                     <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/what-is-my-ip">What is my IP</Link>
                     <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/dns-lookup">DNS Lookup</Link>
+ 		    <Link className="block px-3 py-2 hover:bg-gray-100" href="/tools/website-safety-checker">website safety checker</Link>
                   </div>
                 </div>
               </div>
